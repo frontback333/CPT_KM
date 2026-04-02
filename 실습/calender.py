@@ -9,6 +9,6 @@ print("일 월 화 수 목 금 토")
 for i in range(startdate):
     print("   ",end='')
 for i in range(date_quantity[month+1]):
-    if (startdate + i)%7==0:
+    if (startdate + i)%7==0 and startdate+i>=7:
         print()
     print(f"{i+1:2d}",'',end='')
