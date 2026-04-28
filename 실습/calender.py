@@ -1,6 +1,6 @@
 date_quantity = [31,28,31,30,31,30,31,31,30,31,30,31]
 month = int(input())
-startdate = 4
+startdate = 1
 for i in range(month-1):
     startdate += date_quantity[i]
 startdate %= 7
