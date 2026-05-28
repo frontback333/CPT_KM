@@ -6,7 +6,7 @@ def getfile(path):
     with os.scandir(path) as entries:
         for file in entries:
             if file.is_file():
-                with open(file.path, "r", encoding="utf-8", errors="ignore") as f:
+                with open(file.path, "r") as f:
                     fcontent = f.read()
 
                 fdict[file.name] = (file.stat().st_size, fcontent)
